@@ -1,5 +1,6 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&family=Overpass:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@900&family=Overpass:wght@700&display=swap");
+
 /* Color Theme */
 :root {
     --soft-red: hsl(7, 99%, 70%);
@@ -14,33 +15,62 @@
     --white: hsl(0, 0%, 100%);
     --black: (0, 100%, 0%);
 }
+
 body {
     font-size: 18px;
-    font-family: 'Overpass', sans-serif;
+    font-family: "Overpass", sans-serif;
     /* background-color: var(--white); */
     margin: 0%;
 }
+
+header nav a:hover, h1,h2,h3,h4 {
+    font-family: "Fraunces", serif;
+}
+
+header nav a:hover, h1, h4 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    padding-top: 30px;
+}
+
+p {
+    color: var(--dark-grayish-blue);
+}
+
 /* ------- Header for Logo and Menu Bar ------- */
 header {
     background-image: url("/images/desktop/image-header.jpg");
     background-size: cover;
-    width: auto;
-    height: 500px;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 2%;
+    /* padding: 2%; */
+    height: 110vh;
+    margin-bottom: 0px;
 }
+
+header img,
+nav {
+    margin: 2%;
+}
+
 header nav {
     float: right;
 }
+
 header nav a {
-    padding-right: 20px ;
+    padding-right: 20px;
     color: var(--white);
     font-size: 14px;
     text-decoration: none;
     padding: 10px 20px;
 }
-header nav a:hover{
+
+header nav a:hover {
     background-color: var(--white);
     color: var(--black);
     border-radius: 20px;
@@ -50,9 +80,64 @@ header nav a:hover{
 header h1 {
     color: var(--white);
     letter-spacing: 0.5rem;
-    font-family: 'Fraunces', serif;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
-    text-transform: uppercase;
+    margin: 100px auto;
 }
+
+.arrowIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15vh;
+}
+
+/* ------ main parts ------ */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.picture {
+    width: 50%;
+}
+
+.description {
+    margin: auto;
+    width: 25%;
+    display: block;
+}
+
+.picDescription {
+    position: relative;
+    width: 50%;
+}
+
+.fruitPicture { width: 100%;}
+
+.text-block {
+    position: absolute;
+    bottom: 30px;
+    right: 30%;
+    width: 45%;
+    color: var(--dark-desaturated-cyan);
+    text-align: center;
+}
+/* .picDescription1 {
+    background-image: url(images/desktop/image-graphic-design.jpg);  
+}
+.picDescription2 {
+    background-image: url(images/desktop/image-photography.jpg);
+}
+
+.picDescription1, .picDescription2 {
+    width: 100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+} */
+
+
 
