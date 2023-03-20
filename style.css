@@ -168,52 +168,64 @@ header h1 {
 }
 
 /* 4 pictures on bottom */
-.fourPics{
-width: 25%;
+.fourPics {
+  width: 25%;
 }
 
 /* nav bottom */
 .flex-container2 {
-    background-color: var(--dark-moderate-cyan);
-    width: 100%;
-    align-items: center;
+  background-color: var(--dark-moderate-cyan);
+  width: 100%;
+  height: auto;
+  /* align-items: center; */
 }
 .flex-container2 img {
-    width: 15%;
-    display: block;
-    margin:  50px auto;
-    background-color: var(--very-dark-desaturated-blue);
+  width: 15%;
+  display: block;
+  margin: 50px auto;
+  fill: var(--very-dark-desaturated-blue);
+  /* background-color: var(--very-dark-desaturated-blue); */
 }
+.flex-container2 nav {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
 
+}
 .flex-container2 nav a {
-    color: var(--dark-desaturated-cyan);
-    padding: 10px 20px;
-    text-decoration: none;
-margin-left: 50%;
-
+  color: var(--dark-desaturated-cyan);
+  padding: 10px 40px 60px;
+  text-decoration: none;
 }
 
-/* header nav a {
-    padding-right: 20px;
+.flex-container2 nav a:hover {
     color: var(--white);
-    font-size: 14px;
-    text-decoration: none;
-    padding: 10px 20px;
-
- */
-  
-  /* header nav a:hover {
-    background-color: var(--white);
-    color: var(--black);
     border-radius: 20px;
     width: 20%;
-  } */
+  } 
+
+  /* --- favicon socail media ---- */
+  .favicon {
+    width: 150px;
+    flex-direction: row ;
+    display: flex;
+    margin-left:  auto;
+    margin-right: auto;
+    /* flex-wrap: wrap; */
+  }
+
 /* ------ Media  -----*/
-/* @media (max-width: 800px) {
+@media (max-width: 760px) {
+   header {
+   width: 100%;
+    
+} 
+
     .flex-container {
       flex-direction: column;
     }
-  } */
+  }
 /* .picDescription1 {
     background-image: url(images/desktop/image-graphic-design.jpg);  
 }
